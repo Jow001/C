@@ -32,34 +32,27 @@ main()
 	{
 		continueline = getline(line, MAXLINE);
 		len += continueline;
-
-		copy(longest, line);
-
-		if (max > 0)
-		{
-			printf("%s", longest);
-		}
 	}
 
 	return 0;
 }
 
-int getline(char s[], int lim)
+int getline(char line[], int lim)
 {
-	int c, i;
+	int str, i;
 
-	for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; i++)
+	for (i = 0; i < lim - 1 && (str = getchar()) != EOF && str != '\n'; i++)
 	{
-		s[i] = c;
+		line[i] = str;
 	}
 
-	if (c == '\n')
+	if (str == '\n')
 	{
-		s[i] = c;
+		line[i] = str;
 		i++;
 	}
 
-	s[i] = '\0';
+	line[i] = '\0';
 	return i;
 }
 
