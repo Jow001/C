@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main()
+int main()
 {
 	int str;
 	int symbols[256] = { 0 };
