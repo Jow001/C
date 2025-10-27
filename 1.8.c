@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
  
     int string, spaces = 0, tabs = 0, endstr = 0;
 
@@ -23,3 +24,5 @@ int main() {
     printf("end strings: %d\n", endstr);
 
     return 0;
+
+}
